@@ -1,0 +1,58 @@
+﻿@page "/contact"
+@attribute [Authorize(Roles = "Admin")]
+
+@using DataLibrary
+@using smsDashboard.Models
+@using Microsoft.Extensions.Configuration
+@inject IDataAccess _data
+@inject IConfiguration _config
+@inject HttpClient Http
+
+<h1>Phonebook</h1>
+
+if (contacts == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Telephone</th>
+                <th>Contact Group</th>
+                <th>Notes</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var contact in contacts)
+            {
+                <tr>
+                    <td>@contact.firstName</td>
+                    <td>@contact.lastName</td>
+                    <td>@contact.telephone</td>
+                    <td></td>
+                    <td>@contact.notes</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    List<ContactModel> contacts;
+
+    protected override async Task OnInitializedAsync()
+    {
+       @* Console.WriteLine("Contact - OnInitializedAsync");
+        contact = new Contact();
+        contactList = await contactService.getContact(); 
+
+        Http.GetJsonAsync<List<ContactModel>>*@
+
+        string sql = "select * from contact";
+        contacts = await _data.LoadData<ContactModel, dynamic>(sql, new { }, _config.GetConnectionString("default"));
+    }
+}

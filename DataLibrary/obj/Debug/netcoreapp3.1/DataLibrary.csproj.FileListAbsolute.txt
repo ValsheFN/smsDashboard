@@ -1,0 +1,10 @@
+C:\dev\smsDashboard\DataLibrary\bin\Debug\netcoreapp3.1\DataLibrary.deps.json
+C:\dev\smsDashboard\DataLibrary\bin\Debug\netcoreapp3.1\DataLibrary.dll
+C:\dev\smsDashboard\DataLibrary\bin\Debug\netcoreapp3.1\DataLibrary.pdb
+C:\dev\smsDashboard\DataLibrary\obj\Debug\netcoreapp3.1\DataLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\dev\smsDashboard\DataLibrary\obj\Debug\netcoreapp3.1\DataLibrary.AssemblyInfoInputs.cache
+C:\dev\smsDashboard\DataLibrary\obj\Debug\netcoreapp3.1\DataLibrary.AssemblyInfo.cs
+C:\dev\smsDashboard\DataLibrary\obj\Debug\netcoreapp3.1\DataLibrary.csproj.CoreCompileInputs.cache
+C:\dev\smsDashboard\DataLibrary\obj\Debug\netcoreapp3.1\DataLibrary.dll
+C:\dev\smsDashboard\DataLibrary\obj\Debug\netcoreapp3.1\DataLibrary.pdb
+C:\dev\smsDashboard\DataLibrary\obj\Debug\netcoreapp3.1\DataLibrary.csproj.AssemblyReference.cache
